@@ -3,13 +3,13 @@ const result = document.getElementById("result");
 
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
-        result.textContent += e.target.id; // on recupere la touche sur laquelle on clique. avec le += on peut mettre plusieurs éléments à la suite
+        result.textContent += e.target.id; 
 
     });
 });
 
 equal.addEventListener('click', ()=>{
-    result.textContent = eval(result.textContent); //eval est une méthode qui permet de calculer les éléments dans un textcontent.
+    result.textContent = eval(result.textContent); 
     console.log(result);
 })
 
